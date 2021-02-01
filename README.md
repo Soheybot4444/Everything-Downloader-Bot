@@ -1,16 +1,19 @@
-# Leh ME try .😅
+# Easy Way Deploy
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-# Leh me think ..🤔
+**Heroku Free users use Less MODULES as far possible as using more modules will exceed memory .**
+
+# Everything Downloader bot
 
 This Telegram bot can download almost anything :)
 
-[koyu.space](http://koyu.space)
 
+## Modules :-
+
+spotify,youtube,soundcloud,mixcloud,voice,videonotes,help,commands,stats,extras,counters,ud,subscriptions,videos,boxxy,horny,settag,ping,kick,ban,delete,pin,promote
 
 ### Used Libraries/Applications
-
 - FFMPEG
 - LAME
 - eyeD3
