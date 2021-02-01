@@ -1,0 +1,36 @@
+{
+  "name": "EveryThing DownloadEr bot",
+  "description": "A Telegram bot to download musics and videos",
+  "keywords": [
+    "telegram",
+    "deezer"
+  ],
+  "repository": "https://github.com/bhardwajjEE",
+  "success_url": "https://github.com/bhardwajjEE",
+  "website": "https://github.com/bhardwajjEE",
+  "env": {
+    "ALLOWUNSUBS": {
+      "description": "TRUE OR FALSE",
+      "value": "TRUE"
+    },
+    "PYTHONUNBUFFERED": {
+      "description": "DON'T touch if you don't know what it is",
+      "value": "0"
+    },
+    "TOKEN": {
+      "description": "get this value from @BotFather",
+      "value": ""
+    },
+    "USETOR": {
+      "description": "TRUE OR FALSE",
+      "value": "FALSE"
+    },
+    "BOTMASTER": {
+      "description": "Owner Telegram ID",
+      "value": ""
+    }
+  },
+  "buildpacks": [{
+    "url": "heroku/python"
+  }]
+}
