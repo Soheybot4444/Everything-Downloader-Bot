@@ -13,9 +13,9 @@
       "description": "TRUE OR FALSE",
       "value": "TRUE"
     },
-    "PYTHONUNBUFFERED": {
-      "description": "DON'T touch if you don't know what it is",
-      "value": "0"
+    "MODULES": {
+      "description": "Use less modules if you using heroku free tier ; see readMe for more info",
+      "value": "spotify,youtube,soundcloud,mixcloud,help,commands,boxxy,horny,ping"
     },
     "TOKEN": {
       "description": "get this value from @BotFather",
