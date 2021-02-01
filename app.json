@@ -15,7 +15,7 @@
     },
     "MODULES": {
       "description": "Use less modules if you using heroku free tier ; see readMe for more info",
-      "value": "spotify,youtube,soundcloud,mixcloud,help,commands,boxxy,horny,ping"
+      "value": "spotify,youtube"
     },
     "TOKEN": {
       "description": "get this value from @BotFather",
