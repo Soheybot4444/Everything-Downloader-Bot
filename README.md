@@ -1,4 +1,7 @@
 # Leh ME try .😅
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 # Leh me think ..🤔
 
 This Telegram bot can download almost anything :)
