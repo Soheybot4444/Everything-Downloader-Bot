@@ -7,10 +7,9 @@
 
 This Telegram bot can download almost anything :)
 
+## ScreensHot
+![](https://telegra.ph/file/19a61cb1837630f55e138.jpg)
 
-## Modules :-
-
-spotify,youtube,soundcloud,mixcloud,voice,videonotes,help,commands,stats,extras,counters,ud,subscriptions,videos,boxxy,horny,settag,ping,kick,ban,delete,pin,promote
 
 ### Used Libraries/Applications
 - FFMPEG
