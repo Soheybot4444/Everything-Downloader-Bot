@@ -2,8 +2,6 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) 
 </br>
-#### not StablE for Free Users (memory Quota Exceeds)
-**Heroku Free users try using Less MODULES , maybe using less module will solve Error ...😶**
 
 # Everything Downloader bot
 
