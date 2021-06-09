@@ -63,30 +63,7 @@ def isenabled(chat_id, module):
     if "*" in blacklist:
         modenabled = False
     return modenabled
-
-def getduration(dlcmd):
-    retry = True
-    while retry:
-        extraoptions = "socks5://"+str(random.randint(0,9999))+":"+str(random.randint(0,9999))+"@127.0.0.1:9050"
-        try:
-            if 'USETOR' in os.environ and os.environ.get('USETOR') == 'TRUE':
-                extraoptions = "socks5://"+str(random.randint(0,9999))+":"+str(random.randint(0,9999))+"@127.0.0.1:9050"
-            dlcmd = "youtube-dl --proxy " + extraoptions + " " + extraoptions2 + " -j " + dlcmd
-            if "youtube.com" in dlcmd or "youtu.be" in dlcmd:
-                args = dlcmd.split(" ")
-                args2 = ["jq", ".duration"]
-                process_dl = subprocess.Popen(args, stdout=subprocess.PIPE, shell=False)
-                process_jq = subprocess.Popen(args2, stdin=process_dl.stdout, stdout=subprocess.PIPE, shell=False)
-                process_dl.stdout.close()
-                try:
-                    return int(str(process_jq.communicate()[0]).replace("b'", "").replace("\\n'", ""))
-                except:
-                    return None
-            else:
-                return 0
-            retry = False
-        except:
-            pass
+            
 
 def handle(bot):
     blacklist = open("blacklist.txt", "r").read()
@@ -98,12 +75,12 @@ def handle(bot):
                 os.system("sh clean.sh")
                 try:
                     botlang = update.effective_message.from_user.language_code
-                    if "de" in botlang:
-                        botlang = "de"
-                    else:
+                    if "c" in botlang:
                         botlang = "c"
+                    else:
+                        pass
                 except:
-                    botlang = "c"
+                    pass
                 done = False
                 bottag = bot.getMe()["username"]
                 f = open("db/random.txt", "r")
@@ -130,10 +107,10 @@ def handle(bot):
                         if bottag == "e43bot":
                             s = s.replace("%%name%%", "E43")
                         else:
-                            if botlang == "de":
+                            if botlang == "c":
                                 s = s.replace("%%name%%", bot.getMe().first_name + ", ein Klon von E43")
                             else:
-                                s = s.replace("%%name%%", bot.getMe().first_name + ", a clone of E43")
+                                pass
                         try:
                             fileid = bot.getUserProfilePhotos(bot.getMe().id).photos[0][0].file_id
                             bot.sendPhoto(chat_id,fileid,s)
