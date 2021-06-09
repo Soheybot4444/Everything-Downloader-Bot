@@ -7,10 +7,8 @@ import os.path
 import re
 import subprocess
 import time
-import eyed3
 import random
 import mutagen
-import soundcloud
 import string
 import json
 import urllib.request
@@ -29,8 +27,6 @@ thumb = "temp/thumb.jpg"
 extraoptions = ""
 extraoptions2 = "--force-ipv4"
 
-client = soundcloud.Client(client_id='Iy5e1Ri4GTNgrafaXe4mLpmJLXbXEfBR')
-
 if 'TOKEN' in os.environ:
     TOKEN = os.environ.get('TOKEN')
 else:
@@ -46,7 +42,7 @@ else:
 if 'MODULES' in os.environ:
     MODULES = os.environ.get('MODULES')
 else:
-    MODULES = 'spotify,youtube,soundcloud,mixcloud,voice,videonotes,help,commands,stats,extras,counters,ud,subscriptions,videos,boxxy,horny,settag,ping,kick,ban,delete,pin,promote'
+    MODULES = 'voice'
 if 'USETOR' in os.environ and os.environ.get('USETOR') == 'TRUE':
     extraoptions = "socks5://"+str(random.randint(0,9999))+":"+str(random.randint(0,9999))+"@127.0.0.1:9050"
 
